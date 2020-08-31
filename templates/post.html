@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="blog-post">
+    <div class="row">
+        <div class="title">
+            <div class="text-center">
+                <h1>{{ title }}</h1>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="post-info">
+                <p><span>Author:</span> {{ author }}</p>
+                <p><span>Date:</span> {{ date }}</p>
+            </div>
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm text-center">
+            <ul class="social-links">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            {{ content | safe}}
+        </div>
+    </div>
+</div>
+{% endblock %}
