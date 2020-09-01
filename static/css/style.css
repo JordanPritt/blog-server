@@ -3,30 +3,27 @@ body {
     font-size: 1.15em;
 }
 
+a {
+    transition: all 300ms ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
 nav {
     padding: 1em !important;
 }
 
 nav li {
     border-bottom: solid 3px rgba(0, 0, 0, 0);
+    transition: border 300ms ease-in-out;
 }
 
 nav li:hover {
-    border-bottom: solid 3px #035dbb;
-    /* transition: border 300ms ease-in-out; */
-    animation-name: border fade-in-left;
-    animation-duration: 300ms;
-}
-
-@keyframes fade-in-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    border-bottom: solid 3px #b31461;
+    transition: border 300ms ease-in-out;
 }
 
 .social-links li {
@@ -49,7 +46,7 @@ nav li:hover {
 }
 
 .title p span {
-    color: #ccc;
+    color: #ddd;
 }
 
 .title h1 {
@@ -79,12 +76,46 @@ nav li:hover {
 
 .blog-post {
     background-color: #100e17;
-    color: #ccc;
+    color: #ddd;
+}
+
+/* Cards */
+.card {
+    border: none;
+    /* background-image: linear-gradient(to right, #004d4d, #00cdcd); */
+    background-color: #343a40;
+    color: #ddd;
+}
+
+.card h5 {
+    color: #b9bb03;
+    font-weight: bold;
+}
+
+.card h6 {
+    color: #eee;
+    font-weight: bold;
+}
+
+.card a {
+    color: #b31461 !important;
+    font-weight: bold;
+    transition: color 300ms ease-in-out;
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: #700238 !important;
+    font-weight: bold;
+    transition: color 300ms ease-in-out;
 }
 
 /* Code Syntax */
 
-.codehilite {}
+.codehilite pre {
+    margin: 0em !important;
+    padding: 0em !important;
+}
 
 .codehilite {
     border-radius: .5em;

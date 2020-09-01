@@ -3,11 +3,13 @@
 {% block content %}
 <div class="blog-post">
     <div class="row">
-        <div class="title">
-            <div class="text-center">
-                <h1>{{ title }}</h1>
+        <div class="col-sm">
+            <div class="title">
+                <div class="text-center">
+                    <h1>{{ title }}</h1>
+                </div>
+                <hr />
             </div>
-            <hr />
         </div>
     </div>
     <div class="row">
@@ -26,6 +28,8 @@
             </ul>
         </div>
     </div>
+    <br />
+    <br />
     <div class="row">
         <div class="col-sm">
             {{ content | safe}}
