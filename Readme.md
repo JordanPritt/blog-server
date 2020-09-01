@@ -8,9 +8,8 @@ Blog-Server
 >Tools used:
 >- Python 3.8+
 >- Flask & Jinja
->- HTML/CSS/JS
->- Markdown
->- JSON
+>- Bootstrap & FontAwesome
+>- Markdown & JSON
 
 <br />
 
